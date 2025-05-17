@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Me Perdonas ? UwU</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: pink;
+      font-family: 'Comic Sans MS', cursive;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contenedor {
+      text-align: center;
+    }
+
+    .contenedor p {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    button {
+      font-size: 24px;
+      padding: 15px 30px;
+      margin: 0 20px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      color: white;
+      transition: transform 0.2s;
+    }
+
+    #yesBtn {
+      background-color: green;
+    }
+
+    #noBtn {
+      background-color: red;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+    }
+
+    #mensajeAmor {
+      margin-top: 40px;
+      font-size: 28px;
+      color: darkmagenta;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contenedor">
+    <p>¿Me Perdonas?</p>
+    <button id="yesBtn">SI UwU</button>
+    <button id="noBtn">NO matate</button>
+    <div id="mensajeAmor">Gracias, yo también te quiero 💖</div>
+  </div>
+
+  <script>
+    const yesBtn = document.getElementById('yesBtn');
+    const mensaje = document.getElementById('mensajeAmor');
+
+    yesBtn.addEventListener('click', () => {
+      mensaje.style.display = 'block';
+      setTimeout(() => {
+        alert('Foto ano?');
+      }, 2000); // 2000 milisegundos = 2 segundos
+    });
+  </script>
+  
+</body>
+</html>
